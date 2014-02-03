@@ -6,7 +6,8 @@ Validation Library for IOS apps
 
 
 ## Options
-Validation for email address, required text field, minimum length, maximum length, and lettwers and space only. 
+Validation for <br/>
+    <b>email address</b> , required text field, minimum length, maximum length, and lettwers and space only. 
 
 ## Examples
 
