@@ -10,6 +10,7 @@ Validation for email address, required text field, minimum length, maximum lengt
 
 ## Examples
 
+```objc
 //====== Initialize The Validation Library
     validation *validate=[[validation alloc] init];
     
@@ -19,7 +20,7 @@ Validation for email address, required text field, minimum length, maximum lengt
     [validate Required:self.password FieldName:@"Password"];
     [validate MaxLength:12 textField:self.password FieldName:@"User Password"];
     [validate isValid];
-    
+```
 ## Usage
 
 Check out the xCode sample project for this validation plugin.
