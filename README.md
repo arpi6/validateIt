@@ -11,7 +11,7 @@ Validation for: <br/>
     <b>required text field,</b><br/>
     <b>minimum length,</b><br/>
     <b>maximum length,</b><br/>
-    <b>lettwers and space only.</b>
+    <b>letters and space only.</b>
 
 ## Examples
 
