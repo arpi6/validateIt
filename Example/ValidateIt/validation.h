@@ -11,14 +11,11 @@
 @interface validation : NSObject <UITextFieldDelegate>{
 }
 
-- (void) Email : (UITextField *) emailAddress FieldName: (NSString *) textFieldName;
-- (void) Required : (UITextField *) textField FieldName: (NSString *) textFieldName;
-- (void) MinLength: (NSInteger ) length  textFiled: (UITextField *) textField FieldName: (NSString *) textFieldName;
-- (void) LettersSpaceOnly: (UITextField *) textField FieldName: (NSString *) textFieldName;
-- (void) MaxLength: (NSInteger) length textField: (UITextField *)textField FieldName: (NSString *) textFieldName;
-- (void) successLabel: (UITextField *) textField;
-- (void) errorLabel: (UITextField *) textField;
-
+- (void) Email : (NSString *) emailAddress FieldName: (NSString *) textFieldName;
+- (void) Required : (NSString *) textField FieldName: (NSString *) textFieldName;
+- (void) MinLength: (NSInteger ) length  textFiled: (NSString *) textField FieldName: (NSString *) textFieldName;
+- (void) LettersSpaceOnly: (NSString *) textField FieldName: (NSString *) textFieldName;
+- (void) MaxLength: (NSInteger) length textField: (NSString *)textField FieldName: (NSString *) textFieldName; 
 
 - (BOOL) isValid;
 
@@ -39,7 +36,7 @@
 @property(nonatomic, strong) NSString *errorStr;
 @property(nonatomic) BOOL textFiledIsValid;
 
-@property(nonatomic, strong) UITextField *textField;
+@property(nonatomic, strong) NSString *textField;
 
 
 @end

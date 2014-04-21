@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,10 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFe-ob-tfD">
-                                <rect key="frame" x="20" y="230" width="280" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFe-ob-tfD">
+                                <rect key="frame" x="20" y="276" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.082352943720000002" green="0.2117647231" blue="0.34509804840000002" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1jE-Xl-dK3"/>
+                                </constraints>
                                 <color key="tintColor" red="0.039215687659999998" green="0.83921575550000005" blue="0.97254908080000002" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Validate Me">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -28,34 +31,52 @@
                                     <action selector="validateMe:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0lW-Z3-dBH"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yBe-al-WH1">
-                                <rect key="frame" x="20" y="123" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yBe-al-WH1">
+                                <rect key="frame" x="20" y="169" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7hi-Ye-DW2"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nxf-lU-yBj">
-                                <rect key="frame" x="20" y="170" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nxf-lU-yBj">
+                                <rect key="frame" x="20" y="216" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rK7-ih-zM0"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="N2n-FA-ZuB">
-                                <rect key="frame" x="20" y="37" width="280" height="78"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="OW5-T3-8bQ">
+                                <rect key="frame" x="20" y="68" width="280" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90980398650000005" green="0.46666669849999998" blue="0.49411767719999999" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.96431183819999999" green="0.37114857670000001" blue="0.35711419170000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Nxf-lU-yBj" secondAttribute="trailing" constant="20" id="1aY-ya-u8X"/>
+                            <constraint firstItem="OW5-T3-8bQ" firstAttribute="top" secondItem="sFi-Ll-H8f" secondAttribute="bottom" constant="48" id="6r1-Ql-aOh"/>
+                            <constraint firstItem="nFe-ob-tfD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="C15-r2-QjG"/>
+                            <constraint firstAttribute="trailing" secondItem="yBe-al-WH1" secondAttribute="trailing" constant="20" id="FMe-2X-wNM"/>
+                            <constraint firstAttribute="trailing" secondItem="nFe-ob-tfD" secondAttribute="trailing" constant="20" id="NCa-EU-ZVL"/>
+                            <constraint firstItem="nFe-ob-tfD" firstAttribute="top" secondItem="Nxf-lU-yBj" secondAttribute="bottom" constant="30" id="S3U-Hv-4dI"/>
+                            <constraint firstItem="yBe-al-WH1" firstAttribute="top" secondItem="OW5-T3-8bQ" secondAttribute="bottom" constant="64" id="ULh-dD-oq0"/>
+                            <constraint firstItem="Nxf-lU-yBj" firstAttribute="top" secondItem="yBe-al-WH1" secondAttribute="bottom" constant="17" id="fs2-ER-HEE"/>
+                            <constraint firstItem="Nxf-lU-yBj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="hS7-3Z-Ms4"/>
+                            <constraint firstItem="yBe-al-WH1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="l8L-nS-9PD"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="email" destination="yBe-al-WH1" id="nzu-yE-XyX"/>
-                        <outlet property="errorLabel" destination="N2n-FA-ZuB" id="pjj-f6-MXE"/>
+                        <outlet property="errorLabel" destination="OW5-T3-8bQ" id="NR2-Pm-bW7"/>
                         <outlet property="password" destination="Nxf-lU-yBj" id="Ymp-qn-Gs9"/>
                     </connections>
                 </viewController>
